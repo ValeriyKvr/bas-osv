@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:/Program Files \\(x86\\)/v8unpack/v8unpack.exe:*)",
+      "Bash(/c/Program Files \\(x86\\)/v8unpack/v8unpack.exe:*)",
+      "Bash(cmd.exe:*)",
+      "Bash(powershell.exe:*)",
+      "WebSearch",
+      "Bash(python:*)",
+      "Skill(update-config)",
+      "PowerShell(Get-ChildItem 'HKLM:\\\\SOFTWARE\\\\Classes' -ErrorAction SilentlyContinue | Where-Object { $_.PSChildName -match 'COMConnector' } | Select-Object -ExpandProperty PSChildName; Write-Output '--- WOW6432 ---'; Get-ChildItem 'HKLM:\\\\SOFTWARE\\\\WOW6432Node\\\\Classes' -ErrorAction SilentlyContinue | Where-Object { $_.PSChildName -match 'COMConnector' } | Select-Object -ExpandProperty PSChildName; Write-Output '--- installed platforms ---'; Get-ChildItem 'C:\\\\Program Files\\\\1cv8','C:\\\\Program Files \\(x86\\)\\\\1cv8' -ErrorAction SilentlyContinue -Directory | Select-Object -ExpandProperty Name)",
+      "Bash(timeout 25 python -m streamlit run osv_app.py --server.headless true --server.port 8533 --server.fileWatcherType none)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8533/_stcore/health)",
+      "Bash(wait)"
+    ]
+  }
+}

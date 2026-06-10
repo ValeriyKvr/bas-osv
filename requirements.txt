@@ -1,0 +1,8 @@
+# Пайплайн ОСВ: 1С (COM) → PostgreSQL/Excel → Streamlit-дашборд
+# pywin32 лише на Windows: у хмарі (Linux) дашборд тільки читає PostgreSQL
+pywin32>=306; sys_platform == "win32"
+psycopg2-binary>=2.9  # PostgreSQL
+pandas>=2.0           # обробка ОСВ
+openpyxl>=3.1         # запис/читання Excel
+streamlit>=1.40       # дашборд (dashboard.py)
+altair>=5             # графіки на сторінці порівняння

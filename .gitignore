@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Згенеровані вивантаження
+exports/*.xlsx
+exports/_debug_*.png
+
+# Бекапи бази 1С (великі)
+backup/
+*.dt
+
+# Локальні налаштування / секрети
+# (за потреби винесіть паролі з config.py сюди)
+
+# IDE
+.idea/
+.vscode/
