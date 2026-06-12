@@ -22,5 +22,6 @@ pg = st.navigation([
     st.Page("views/finstate.py", title="Фінансовий стан", icon="🩺"),
     st.Page("views/osv.py", title="ОСВ (відомість)", icon="📊"),
     st.Page("views/load.py", title="Завантаження з 1С", icon="⚙️"),
+    st.Page("views/methodology.py", title="Методика розрахунків", icon="📖"),
 ])
 pg.run()
